@@ -1,7 +1,5 @@
 name = "theomanager-signaling"
-type = "javascript"
-
-account_id = "2f77a877cb3dbf335a3ffd7e49c98627"
+main = "src/index.js"
 workers_dev = true
 
 [durable_objects]
