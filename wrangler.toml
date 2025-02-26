@@ -1,5 +1,6 @@
 name = "theomanager-signaling"
 main = "src/index.js"
+compatibility_date = "2025-02-26"
 
 [[durable_objects.bindings]]
 name = "SIGNALING_DO"
