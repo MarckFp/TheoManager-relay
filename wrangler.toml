@@ -2,9 +2,13 @@ name = "theomanager-signaling"
 main = "src/index.js"
 compatibility_date = "2025-02-26"
 
+[env.staging]
+name = "theomanager-signaling-staging"
+
 [[durable_objects.bindings]]
 name = "SIGNALING_DO"
 class_name = "SignalingDO"
 
-[env.staging]
-name = "theomanager-signaling-staging"
+[[migrations]]
+tag = "0.0.1"
+new_classes = ["SignalingDO"]
