@@ -1,8 +1,9 @@
 name = "theomanager-signaling"
 main = "src/index.js"
-workers_dev = true
 
-[durable_objects]
-bindings = [
-  { name = "SIGNALING_DO", class_name = "SignalingDO" }
-]
+[[durable_objects.bindings]]
+name = "SIGNALING_DO"
+class_name = "SignalingDO"
+
+[env.staging]
+name = "theomanager-signaling-staging"
